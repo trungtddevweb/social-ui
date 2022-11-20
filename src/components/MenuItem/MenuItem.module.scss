@@ -1,0 +1,39 @@
+.wrapper {
+    width: 100%;
+    border-bottom: 0.5px solid rgb(250, 239, 239);
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(247, 243, 243);
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+.img {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.content {
+    overflow: hidden;
+}
+
+
+.text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.desc {
+    font-size: 12px;
+}

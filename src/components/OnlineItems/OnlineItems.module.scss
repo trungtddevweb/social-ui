@@ -1,0 +1,33 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text {
+    font-size: 12px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.state {
+    font-size: 12px;
+
+}

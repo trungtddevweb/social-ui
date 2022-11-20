@@ -1,0 +1,25 @@
+.wrapper {
+    position: relative;
+    width: 350px;
+
+}
+
+.search-result {
+    width: 350px;
+}
+
+
+.input {
+    width: 100%;
+    height: 48px;
+    background-color: #EEEEEE;
+    padding: 8px 16px 8px 48px;
+    font-weight: 500;
+    border-radius: 30px;
+}
+
+.icon {
+    position: absolute;
+    left: 16px;
+    transform: translateY(75%);
+}
