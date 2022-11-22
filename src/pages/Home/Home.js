@@ -3,10 +3,28 @@ import classNames from 'classnames/bind';
 import Story from '~/components/Story';
 import FeatherIcon from 'feather-icons-react/build/FeatherIcon';
 import Image from '~/components/Image';
+import Button from '~/components/Button/Button';
 
 const cx = classNames.bind(styles);
 
 const Home = () => {
+    const listUsers = [
+        {
+            id: 1,
+            name: 'John',
+            mutual: 12,
+        },
+        {
+            id: 1,
+            name: 'John',
+            mutual: 12,
+        },
+        {
+            id: 1,
+            name: 'John',
+            mutual: 12,
+        },
+    ];
     return (
         <div className={cx('wrapper')}>
             <div className={cx('container')}>
@@ -55,8 +73,56 @@ const Home = () => {
                     <div>Posts</div>
                 </div>
                 <div className={cx('sidebar')}>
-                    <div>Friend Request</div>
-                    <div>Confirm Friend</div>
+                    <div className={cx('section')}>
+                        <div className={cx('heading')}>
+                            <h3 className={cx('text-heading')}>Friend Request</h3>
+                            <p className={cx('more')}>See all</p>
+                        </div>
+                        {listUsers.map((user, index) => (
+                            <div key={index} className={cx('user')}>
+                                <div className={cx('info')}>
+                                    <Image
+                                        className={cx('avt-wrapper')}
+                                        src="https://i.pinimg.com/564x/0e/46/c1/0e46c1c4aa2bc8c1963364834a95fd90.jpg"
+                                        alt=""
+                                    />
+                                    <div className={cx('name')}>
+                                        <p className={cx('username')}>{user.name}</p>
+                                        <span className={cx('mutual')}>{user.mutual} mutual friends</span>
+                                    </div>
+                                </div>
+                                <div className={cx('buttons')}>
+                                    <Button className={cx('button')}>Confirm</Button>
+                                    <Button className={cx('button')}>Delete</Button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div className={cx('section')}>
+                        <div className={cx('heading')}>
+                            <h3 className={cx('text-heading')}>Confirm Friend</h3>
+                            <p className={cx('more')}>See all</p>
+                        </div>
+                        {listUsers.map((user, index) => (
+                            <div key={index} className={cx('user')}>
+                                <div className={cx('info')}>
+                                    <Image
+                                        className={cx('avt-wrapper')}
+                                        src="https://i.pinimg.com/564x/0e/46/c1/0e46c1c4aa2bc8c1963364834a95fd90.jpg"
+                                        alt=""
+                                    />
+                                    <div className={cx('name')}>
+                                        <p className={cx('username')}>{user.name}</p>
+                                        <span className={cx('mutual')}>{user.mutual} mutual friends</span>
+                                    </div>
+                                </div>
+                                <div className={cx('buttons')}>
+                                    <Button className={cx('button')}>Confirm</Button>
+                                    <Button className={cx('button')}>Delete</Button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                     <div>Suggest Group</div>
                     <div>Suggest Pages</div>
                     <div>Event </div>
