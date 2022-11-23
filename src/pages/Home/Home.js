@@ -4,6 +4,7 @@ import Story from '~/components/Story';
 import FeatherIcon from 'feather-icons-react/build/FeatherIcon';
 import Image from '~/components/Image';
 import Button from '~/components/Button/Button';
+import Post from '~/components/Post';
 
 const cx = classNames.bind(styles);
 
@@ -70,7 +71,9 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div>Posts</div>
+                    <div className={cx('lists')}>
+                        <Post />
+                    </div>
                 </div>
                 <div className={cx('sidebar')}>
                     <div className={cx('section')}>

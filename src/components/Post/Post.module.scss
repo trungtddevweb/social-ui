@@ -1,0 +1,136 @@
+.wrapper {
+    margin-bottom: 1rem;
+    width: 100%;
+    margin-top: 24px;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.container {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.more {
+    background-color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.username {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.date {
+    font-size: 12px;
+    color: var(--icon-color);
+    font-weight: 500;
+}
+
+.avt,
+.more {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+.cutoff-content {
+    --max-lines: 3;
+    --line-height: 1.4;
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--icon-color);
+    line-height: var(--line-height);
+    overflow: hidden;
+    max-height: calc(var(--max-lines) * 1em * var(--line-height));
+    position: relative;
+
+}
+
+.expand-text {
+    appearance: none;
+    margin-bottom: 16px;
+    cursor: pointer;
+    color: var(--primary);
+    font-weight: 600;
+
+    &::before {
+        content: "See more";
+
+    }
+}
+
+.expand-text:checked::before {
+    content: "Colapse";
+}
+
+.cutoff-content:has(+ .expand-text:checked) {
+    max-height: none;
+}
+
+.img-content {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+
+// Items
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.emotion-icon {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.emotion-icon.blue {
+    background-color: var(--primary);
+}
+
+.emotion {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 600;
+
+
+}
