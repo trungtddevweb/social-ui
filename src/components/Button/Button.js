@@ -41,6 +41,7 @@ Button.propTypes = {
     to: PropTypes.string,
     href: PropTypes.string,
     text: PropTypes.string,
+
     onClick: PropTypes.func,
 };
 
