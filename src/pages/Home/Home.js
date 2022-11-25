@@ -73,6 +73,9 @@ const Home = () => {
                     </div>
                     <div className={cx('lists')}>
                         <Post />
+                        <Post />
+                        <Post />
+                        <Post />
                     </div>
                 </div>
                 <div className={cx('sidebar')}>

@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import styles from './Post.module.scss';
 import classNames from 'classnames/bind';
 import Image from '../Image';
@@ -70,6 +70,6 @@ const Post = (props) => {
     );
 };
 
-Post.propTypes = {};
+// Post.propTypes = {};
 
 export default Post;
